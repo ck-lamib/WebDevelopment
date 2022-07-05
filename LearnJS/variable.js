@@ -41,3 +41,9 @@ const x = "constant value such as array, pi";
 if (!myArray[0]) console.log("yes");
 else console.log("no");
 })();
+
+(function(){
+    var x = null;
+    console.log(x*30);  //0
+})();
+
