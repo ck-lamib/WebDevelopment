@@ -39,4 +39,5 @@ const x = "constant value such as array, pi";
 (function(){
     var myArray = [1];
 if (!myArray[0]) console.log("yes");
+else console.log("no");
 })();
