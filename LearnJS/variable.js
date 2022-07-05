@@ -40,3 +40,4 @@ const x = "constant value such as array, pi";
     var myArray = [1];
 if (!myArray[0]) console.log("yes");
 })();
+
