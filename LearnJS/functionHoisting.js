@@ -1,5 +1,5 @@
 (function () {
-    printName();
+    printName(); //Bimal
     function printName() {
         console.log("Bimal");
     }
@@ -29,6 +29,3 @@
         console.log('bar2');
     };
 })();
-
-
-
