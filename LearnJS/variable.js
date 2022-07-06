@@ -47,3 +47,36 @@ else console.log("no");
     console.log(x*30);  //0
 })();
 
+(function (){
+    function add(){
+        console.log(2+5);
+    }
+    console.log(add);
+    add();
+})();
+
+(function (){
+    const hel = 4;
+    let x = 2;
+    function add(){
+        const hel = 9;
+        let x = 8;
+        console.log(x);//8
+        console.log(hel); //9
+    }
+    add();
+    console.log(x); //4
+    console.log(hel); //2
+})();
+
+
+//throws redecleration error
+(function (){
+    function add(){
+        console.log(2+5);
+    }
+    let add = 2;
+    console.log(add);
+    add();
+})();
+

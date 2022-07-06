@@ -1,5 +1,5 @@
 (function () {
-    printName(); //Hello
+    printName(); //Bimal
     function printName() {
         console.log("Bimal");
     }
