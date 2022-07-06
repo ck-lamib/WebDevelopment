@@ -44,17 +44,16 @@
     console.log("value of x: " + x); //41
 })();
 
-//var x and let x cannot be used
+//var x and let x cannot be used. if a pre decleared variable is redecleared with let/const, throws error. But var can be redecleared
 (function(){
     var x = 20; // global variable
+
     var x = 40;
     let x = 30;
+
     function sum(){
         console.log("value of x: " + x++); // error
     }
     sum();
     console.log("value of x: " + x); //error
 })();
-
-
-
