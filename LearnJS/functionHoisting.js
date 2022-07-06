@@ -2,8 +2,6 @@
     printName(); //Hello
     function printName() {
         console.log("Bimal");
-        console.log("saroj");
-
     }
 })();
 
