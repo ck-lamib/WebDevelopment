@@ -1,5 +1,5 @@
 (function () {
-    function getMonthName(mo) {
+    /*function getMonthName(mo) {
         mo = mo - 1; // Adjust month number for array index (1 = Jan, 12 = Dec)
         let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul',
             'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -9,7 +9,7 @@
             throw 'InvalidMonthNo'; // throw keyword is used here
         }
     }
-    getMonthName(0);  //throw exception
+    getMonthName(0);  //throw exception*/
 
     try { // statements to try
         monthName = getMonthName(myMonth); // function could throw exception
@@ -19,3 +19,5 @@
         logMyErrors(e); // pass exception object to error handler (i.e. your own function)
     }
 })();
+
+
