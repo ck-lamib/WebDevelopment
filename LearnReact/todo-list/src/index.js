@@ -4,10 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const Data = [
+  { name: "Eat", complete: true, id: "todo-0" },
+  { name: "Sleep", complete: false, id: "todo-0" },
+  { name: "Repeat", complete: false, id: "todo-0" }
+];
+const taskType = ["all","active","complete"];
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App tasks={Data} types={taskType}/>
   </React.StrictMode>
 );
 
