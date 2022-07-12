@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 const Data = [
   { name: "Eat", complete: true, id: "todo-0" },
-  { name: "Sleep", complete: false, id: "todo-0" },
-  { name: "Repeat", complete: false, id: "todo-0" }
+  { name: "Sleep", complete: false, id: "todo-1" },
+  { name: "Repeat", complete: false, id: "todo-2" }
 ];
 const taskType = ["all","active","complete"];
 

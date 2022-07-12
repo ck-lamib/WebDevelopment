@@ -1,28 +1,25 @@
 // import './App.css';
+import React, {useState} from "react";
 import Todo from "./components/Todo";
 import FilterButton from "./components/FilterButton";
+import Form from "./components/Form";
 
-function addTask(name) {
-  alert(name);
-}
 
 
 function App(props) {
-  const taskList = props.tasks?.map(task => <Todo name={task.name} complete={task.complete} id={task.id} />);
+  //callback props
+function addTask(name) {
+  const newTask = {name: name, complete:false, id:"id"};
+  setTasks([...tasks, newTask]);
+}
+ const [tasks, setTasks] = useState(props.tasks);
+  const taskList = tasks.map(task => <Todo name={task.name} complete={task.complete} id={task.id} />);
   const taskType = props.types?.map(type => <FilterButton taskType={type}/>);
   return (
     <div className="App">
       <div className="todoapp stack-large">
         <h1>TodoMatic</h1>
-        <form>
-            <h2 className="label-wrapper">
-              <label htmlFor="new-todo-input" className="label__lg">
-              What needs to be done?
-              </label>
-              </h2>
-            <input type="text" id="new-todo-input" className="input input__lg" name="text" autoComplete="off"/>
-            <button type="button" className="btn btn__primary btn__lg">Add</button>
-        </form>
+        <Form addTask={addTask} />
 
         <div className="filters btn-group stack-exception">
           {taskType}
